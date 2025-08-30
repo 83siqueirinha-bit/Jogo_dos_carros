@@ -1,7 +1,7 @@
--- Criando o banco de dados
+-- Criando um banco de dados simples
 CREATE DATABASE carros_db;
 
--- Usando esse banco
+-- Usando esse banco criado
 USE carros_db;
 
 -- Criando a tabela de carros
@@ -9,12 +9,12 @@ CREATE TABLE carros (
     id INT AUTO_INCREMENT PRIMARY KEY,
     modelo VARCHAR(100) NOT NULL,
     marca VARCHAR(100) NOT NULL,
-    potencia INT NOT NULL,       -- em cavalos (hp)
+    potencia INT NOT NULL,       -- potência em cavalos (hp)
     ano INT NOT NULL,
     carroceria VARCHAR(50) NOT NULL
 );
 
--- Inserindo alguns carros de exemplo
+-- Inserindo alguns carros de exemplo para podermos jogar
 INSERT INTO carros (modelo, marca, potencia, ano, carroceria) VALUES
 ('Civic', 'Honda', 155, 2020, 'Sedan'),
 ('Corolla', 'Toyota', 144, 2019, 'Sedan'),
